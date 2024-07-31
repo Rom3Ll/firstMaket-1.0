@@ -314,7 +314,7 @@
   }
 
   .main__section-btn::before {
-    content: url(/img/icons/expand.svg);
+    content: url(../img/icons/expand.svg);
     margin-right: 8px;
   }
 
