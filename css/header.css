@@ -12,13 +12,38 @@ body {
 
   .header__nav-list {
     padding-left: 0px;
+    list-style: none;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    transition: 0.7;
   }
 
-  .header__nav-list-item {
-    list-style: none;
+  .header__nav-list-item__burger > a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/icons/burger.svg);
+  }
+
+  .header__nav-list-item__delimiter {
+    width: 2px;
+    height: 32px;
+    background-image: url(../img/icons/divider.svg);
+  }
+
+  .header__nav-list-item__repair > a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/icons/repair.svg);
+  }
+
+  .header__nav-list-item__status > a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/icons/checkstatus.svg);
   }
 
   .header__nav-list-item:nth-child(6),
