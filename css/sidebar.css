@@ -28,7 +28,10 @@
 .main,
 .footer {
   width: 320px;
-  /* box-shadow: 16px 0 52px rgba(0, 0, 0, 0.2); */
+}
+
+.body__shadow-wrapper {
+  max-width: fit-content;
   box-shadow: 16px 8px 52px -2px rgba(0, 0, 0, 0.2);
 }
 
@@ -98,6 +101,10 @@
 
 .main__nav-list-item:last-child {
   margin-bottom: 0px;
+}
+
+.footer {
+  padding-bottom: 15px;
 }
 
 .footer__nav {
