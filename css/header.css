@@ -9,7 +9,7 @@ body {
   height: 40px;
 }
 
-@media (min-width: 320px) and (max-width: 767.98px) {
+@media (max-width: 767.98px) {
   .header {
     border-bottom: 1px solid #d9fff5;
     min-width: 320px;
