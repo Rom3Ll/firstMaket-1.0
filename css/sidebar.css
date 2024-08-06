@@ -30,9 +30,17 @@
   width: 320px;
 }
 
+.header {
+  margin-top: 20px;
+}
+
 .body__shadow-wrapper {
   max-width: fit-content;
   box-shadow: 16px 8px 52px -2px rgba(0, 0, 0, 0.2);
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
 }
 
 .header__nav-list {
@@ -40,7 +48,6 @@
   justify-content: space-between;
   list-style: none;
   align-items: center;
-  padding: 25px 0 40px 0;
 }
 
 .header__nav-list__wrapper1 {
@@ -50,18 +57,21 @@
   margin-left: 18px;
 }
 
-.header__nav-list-item__burger {
+.header_btn {
   width: 40px;
   height: 40px;
-  background-image: url(../img/icons/burgerX.svg);
+  background-color: inherit;
+  border: 0;
   cursor: pointer;
 }
 
-.header__nav-list-item__status {
-  width: 40px;
-  height: 40px;
+.header__nav-list-btn_burger {
+  background-image: url(../img/icons/burgerX.svg);
+}
+
+.header__nav-list-btn_status {
   background-image: url(../img/icons/search.svg);
-  cursor: pointer;
+
   margin-right: 25px;
 }
 
@@ -80,12 +90,13 @@
   margin-bottom: 32px;
   min-width: fit-content;
   color: #1b1c21;
-  transition: 0.5;
+  transition: 0.5s;
 }
 
-.main__nav-list-item > a {
+.main__nav-list-link {
   text-decoration: none;
   color: inherit;
+  display: block;
 }
 
 .main__nav-list-item:hover {
@@ -123,30 +134,32 @@
   gap: 15px;
 }
 
-.footer__nav-list-call {
+.footer__nav-link_style {
+  display: block;
   width: 40px;
   height: 40px;
+}
+
+.footer__nav-list-call {
   background-image: url(../img/icons/icons__tablet/call.svg);
 }
 
 .footer__nav-list-chat {
-  width: 40px;
-  height: 40px;
   background-image: url(../img/icons/icons__tablet/chat.svg);
 }
 
 .footer__nav-list-profile {
-  width: 40px;
-  height: 40px;
   background-image: url(../img/icons/icons__tablet/profile.svg);
 }
 
 .footer__nav-list-mail {
   margin-top: 15px;
   padding-bottom: 15px;
+  transition: 0.6s;
 }
 
 .footer__nav-list-mail > a {
+  display: block;
   font-family: "TTLakes Medium";
   font-style: normal;
   font-weight: 500;
@@ -161,12 +174,17 @@
   opacity: 0.7;
 }
 
+.footer__nav-list-number {
+  transition: 0.6s;
+}
+
 .footer__nav-list-number > a {
-  font-family: "TTLakes Medium";
+  display: block;
+  font-family: "TTLakes Bold";
   font-style: normal;
-  font-weight: 500;
-  letter-spacing: -0.2px;
-  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: -0.6px;
+  line-height: 32px;
   text-decoration: none;
   color: #1b1c21;
 }
@@ -175,13 +193,19 @@
   padding-top: 40px;
 }
 
-.footer__nav-list-lang > ul {
+.footer__nav-wrapper {
   list-style: none;
   display: flex;
   gap: 15px;
 }
 
-.footer__nav-list-lang > ul > li:hover {
+.footer__nav-list-lang_style {
+  text-decoration: none;
+  color: #1b1c21;
+  transition: 0.5s;
+}
+
+.footer__nav-list-lang_style:hover {
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   color: #7e7e82;
   cursor: pointer;

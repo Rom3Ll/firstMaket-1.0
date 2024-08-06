@@ -7,15 +7,19 @@
     <link rel="stylesheet" href="css/sidebar.css" />
   </head>
   <body>
-    <div class="body__shadow-wrapper">
+    <aside class="body__shadow-wrapper">
       <header class="header">
         <nav class="header__nav">
           <ul class="header__nav-list">
             <div class="header__nav-list__wrapper1">
-              <li class="header__nav-list-item__burger">
-                <a href="#"></a>
+              <li>
+                <button
+                  name="btn"
+                  class="header__nav-list-btn_burger header_btn"
+                  type="submit"
+                ></button>
               </li>
-              <li class="header__nav-list-item__logo">
+              <li>
                 <a href="#">
                   <img src="img/icons/Group.svg" alt="site logo icon" />
                 </a>
@@ -23,7 +27,11 @@
             </div>
             <div class="header__nav-list__wrapper2">
               <li class="header__nav-list-item__status">
-                <a href="#"> </a>
+                <button
+                  name="btn"
+                  class="header__nav-list-btn_status header_btn"
+                  type="submit"
+                ></button>
               </li>
             </div>
           </ul>
@@ -32,29 +40,29 @@
       <main class="main">
         <nav class="main__nav">
           <ul class="main__nav-list">
-            <li class="main__nav-list-item main__nav-list-item_active">
-              Ремонт техники
+            <li class="main__nav-list-item">
+              <a href="#" class="main__nav-list-link">Ремонт техники</a>
             </li>
             <li class="main__nav-list-item">
-              <a href="#">Услуги и сервисы</a>
+              <a class="main__nav-list-link" href="#">Услуги и сервисы</a>
             </li>
             <li class="main__nav-list-item">
-              <a href="#">Корпоративным клиентам</a>
+              <a class="main__nav-list-link" href="#">Корпоративным клиентам</a>
             </li>
             <li class="main__nav-list-item">
-              <a href="#">Продавцам техники</a>
+              <a class="main__nav-list-link" href="#">Продавцам техники</a>
             </li>
             <li class="main__nav-list-item">
-              <a href="#">Партнерам</a>
+              <a class="main__nav-list-link" href="#">Партнерам</a>
             </li>
             <li class="main__nav-list-item">
-              <a href="#">Производителям</a>
+              <a class="main__nav-list-link" href="#">Производителям</a>
             </li>
             <li class="main__nav-list-item">
-              <a href="#">Наши сервисные центры</a>
+              <a class="main__nav-list-link" href="#">Наши сервисные центры</a>
             </li>
             <li class="main__nav-list-item">
-              <a href="#">Контакты</a>
+              <a class="main__nav-list-link" href="#">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -64,9 +72,24 @@
           <ul class="footer__nav-list">
             <li class="footer__nav-list-icons">
               <ul>
-                <li class="footer__nav-list-call"><a href="#"></a></li>
-                <li class="footer__nav-list-chat"><a href="#"></a></li>
-                <li class="footer__nav-list-profile"><a href="#"></a></li>
+                <li>
+                  <a
+                    class="footer__nav-list-call footer__nav-link_style"
+                    href="#"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="footer__nav-list-chat footer__nav-link_style"
+                    href="#"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="footer__nav-list-profile footer__nav-link_style"
+                    href="#"
+                  ></a>
+                </li>
               </ul>
             </li>
             <li class="footer__nav-list-mail">
@@ -76,21 +99,21 @@
               <a href="tel:+78008908900">8 800 890 8900</a>
             </li>
             <li class="footer__nav-list-lang">
-              <ul>
-                <li class="footer__nav-list-ru">
-                  <p>RU</p>
+              <ul class="footer__nav-wrapper">
+                <li>
+                  <a class="footer__nav-list-lang_style" href="#">RU</a>
                 </li>
-                <li class="footer__nav-list-EN">
-                  <p>EN</p>
+                <li>
+                  <a class="footer__nav-list-lang_style" href="#">EN</a>
                 </li>
-                <li class="footer__nav-list-CH">
-                  <p>CH</p>
+                <li>
+                  <a class="footer__nav-list-lang_style" href="#">CH</a>
                 </li>
               </ul>
             </li>
           </ul>
         </nav>
       </footer>
-    </div>
+    </aside>
   </body>
 </html>
